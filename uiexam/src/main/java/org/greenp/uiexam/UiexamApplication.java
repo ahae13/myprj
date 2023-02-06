@@ -1,13 +1,13 @@
-package org.greenp.myapp;
+package org.greenp.uiexam;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MyappApplication {
+public class UiexamApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MyappApplication.class, args);
+		SpringApplication.run(UiexamApplication.class, args);
 	}
 
 }

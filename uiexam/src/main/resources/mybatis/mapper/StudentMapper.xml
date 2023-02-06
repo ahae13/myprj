@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.greenp.uiexam.mapper.IStudentMapper">
+	<select id="confirm" resultType="org.greenp.uiexam.vo.StudentVO">
+		SELECT * FROM student_tbl WHERE sno= #{sno} AND name=#{name}
+	</select>
+	<select id="loginCheck" resultType="org.greenp.uiexam.vo.StudentVO">
+		SELECT * FROM student_tbl WHERE sno= #{id} AND pw=#{pw}
+	</select>
+	<update id="update">
+		UPDATE student_tbl SET id= #{id}, pw= {pw} WHERE sno= {#sno}
+	</update>
+	<insert id="insert">
+	
+	</insert>
+</mapper>
